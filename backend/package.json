@@ -13,6 +13,8 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "h_build": "docker rmi -f zapad-pet-backend && docker build . -t zapad-pet-backend && heroku container:push web --app zapad-pet-backend && heroku container:release web --app zapad-pet-backend",
+    "h_logs": "heroku logs --tail --app zapad-pet-backend",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",

@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "h_build": "docker rmi -f zapad-pet-frontend && docker build . -t zapad-pet-frontend && heroku container:push web --app zapad-pet-frontend && heroku container:release web --app zapad-pet-frontend",
+    "h_logs": "heroku logs --tail --app zapad-pet-frontend",
     "type-check": "tsc"
   },
   "dependencies": {
