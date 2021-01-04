@@ -1,4 +1,4 @@
-import { HomeContainer } from "../containers/home";
+import { HomeContainer } from "../ui/wrappers/home";
 
 const IndexPage = () => {
   return <HomeContainer />

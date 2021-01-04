@@ -1,4 +1,4 @@
-import { LoginContainer } from "../containers/login";
+import { LoginContainer } from "../ui/wrappers/login";
 
 const LoginPage = () => {
   return <LoginContainer />

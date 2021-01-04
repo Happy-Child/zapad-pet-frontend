@@ -1,4 +1,4 @@
-import { ResetPasswordContainer } from "../containers/reset-password";
+import { ResetPasswordContainer } from "../ui/wrappers/reset-password";
 
 const ResetPasswordPage = () => {
   return <ResetPasswordContainer />

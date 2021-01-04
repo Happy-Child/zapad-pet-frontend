@@ -1,4 +1,4 @@
-import { RegistrationContainer } from "../containers/registration";
+import { RegistrationContainer } from "../ui/wrappers/registration";
 
 const RegistrationPage = () => {
   return <RegistrationContainer />

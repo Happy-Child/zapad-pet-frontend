@@ -1,4 +1,4 @@
-import { NewPasswordContainer } from "../containers/new-password";
+import { NewPasswordContainer } from "../ui/wrappers/new-password";
 
 const NewPasswordPage = () => {
   return <NewPasswordContainer />

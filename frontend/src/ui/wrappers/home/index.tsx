@@ -1,12 +1,13 @@
-import Link from 'next/link';
 import "./style.scss"
+import Link from 'next/link';
+import { MemberLayoutContainer } from "../../templates/member";
 
 const HomeContainer = () => {
   return (
-    <div className="container">
+    <MemberLayoutContainer>
       <Link as="/login" href="/login">login</Link>
       <Link as="/registration" href="/registration">reg</Link>
-    </div>
+    </MemberLayoutContainer>
   )
 }
 

@@ -1,8 +1,8 @@
 import "./style.scss"
-import {GuestLayoutContainer} from "../layouts/guest";
-import {OAuthForm} from "../../ui/organisms/OAuthForm";
-import {AInput} from "../../ui/atoms/AInput";
-import {AButton} from "../../ui/atoms/AButton";
+import {GuestLayoutContainer} from "../../templates/guest";
+import {OAuthForm} from "../../organisms/OAuthForm";
+import {AInput} from "../../atoms/AInput";
+import {AButton} from "../../atoms/AButton";
 
 const NewPasswordContainer = () => {
   return (
