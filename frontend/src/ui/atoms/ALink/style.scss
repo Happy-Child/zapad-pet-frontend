@@ -1,0 +1,11 @@
+@import "src/styles/abstracts";
+
+.a-link {
+  $block: &;
+  transition: all $transition-default;
+  color: $default-color-text;
+
+  &_main {
+    color: $color-main;
+  }
+}

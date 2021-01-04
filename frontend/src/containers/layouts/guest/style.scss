@@ -1,0 +1,26 @@
+@import "src/styles/abstracts";
+
+.guest-container {
+  display: flex;
+  align-items: center;
+  min-height: 560px;
+  height: 100vh;
+
+  &__item {
+    width: 50%;
+  }
+
+  &__wrap-content {
+    display: flex;
+    align-items: center;
+    padding: px-to-rem(60px, 16px) px-to-rem(120px, 16px);
+  }
+
+  &__wrap-img {
+    align-self: stretch;
+    background-image: url("/images/auth-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

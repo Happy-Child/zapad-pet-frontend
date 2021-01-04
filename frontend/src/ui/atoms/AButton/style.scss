@@ -1,0 +1,26 @@
+@import "src/styles/abstracts";
+
+.a-button {
+  $block: &;
+  transition: all $transition-default;
+  min-height: 50px;
+  padding: 8px px-to-rem(42px, 16px);
+  background-color: $color-main;
+  color: #fff;
+  font-family: $font-bold;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $color-main-second;
+  }
+
+  &_accent {
+    background-color: $color-accent;
+
+    &:hover {
+      background-color: $color-red-dark;
+    }
+  }
+}

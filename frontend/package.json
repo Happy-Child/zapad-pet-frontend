@@ -14,7 +14,9 @@
     "h_logs": "heroku logs --tail --app zapad-pet-frontend"
   },
   "dependencies": {
+    "@types/classnames": "^2.2.11",
     "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "config": "^3.3.3",
     "next": "latest",
     "node-sass": "^5.0.0",

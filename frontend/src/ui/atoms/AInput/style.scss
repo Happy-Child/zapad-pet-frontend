@@ -1,0 +1,37 @@
+@import "src/styles/abstracts";
+
+.a-input {
+  $block: &;
+  display: block;
+
+  &__field {
+    border: 1px solid #E2E5E9;
+    min-height: 50px;
+    padding: 6px 1rem;
+    border-radius: 4px;
+    transition: all $transition-default;
+    font-size: 1rem;
+    color: $color-dark;
+    display: block;
+    width: 100%;
+
+    &:hover {
+      border-color: #E2E5E9;
+    }
+
+    &:focus {
+      border-color: $color-main;
+    }
+
+    &::placeholder {
+      color: #999999;
+    }
+  }
+
+  &__label {
+    margin-bottom: 6px;
+    display: block;
+    font-family: $font-bold;
+    font-size: 1rem;
+  }
+}
