@@ -1,0 +1,26 @@
+@import "src/styles/abstracts";
+
+.o-nav-panel {
+  $block: &;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 340px;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: $min-site-height;
+  z-index: $z-nav-panel;
+  background: #fff;
+  box-shadow: 4px 0 16px rgba(178, 178, 178, 0.08), 1px 0 2px rgba(178, 178, 178, 0.05);
+
+  &__inner {
+    padding: px-to-rem(46px, 16px) px-to-rem(20px, 16px);
+  }
+
+  &__wrap-logo {
+    margin: 0 auto px-to-rem(64px, 16px);
+    max-width: 126px;
+    display: block;
+  }
+}

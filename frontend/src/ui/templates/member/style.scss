@@ -1,5 +1,15 @@
 @import "../../../styles/abstracts/index";
 
 .member-container {
+  background-color: $bg-site;
+  min-height: $min-site-height;
+  display: flex;
+  align-items: stretch;
 
+  &__main {
+    width: 100%;
+    max-width: calc(100% - 340px);
+    margin-left: auto;
+    padding: 46px 24px 60px;
+  }
 }

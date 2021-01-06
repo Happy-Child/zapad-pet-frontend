@@ -4,8 +4,9 @@ import { OAuthForm } from "../../organisms/OAuthForm";
 import { ALink } from "../../atoms/ALink";
 import { AInput } from "../../atoms/AInput";
 import { AButton } from "../../atoms/AButton";
+import React from "react";
 
-const LoginContainer = () => {
+const LoginContainer: React.FC = () => {
   return (
     <GuestLayoutContainer>
       <OAuthForm>

@@ -1,6 +1,8 @@
 import { LoginContainer } from "../ui/wrappers/login";
+import React from "react";
+import {NextPage} from "next";
 
-const LoginPage = () => {
+const LoginPage: React.FC & NextPage = () => {
   return <LoginContainer />
 }
 

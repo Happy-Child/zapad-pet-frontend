@@ -1,6 +1,8 @@
 import { NewPasswordContainer } from "../ui/wrappers/new-password";
+import React from "react";
+import {NextPage} from "next";
 
-const NewPasswordPage = () => {
+const NewPasswordPage: React.FC & NextPage = () => {
   return <NewPasswordContainer />
 }
 

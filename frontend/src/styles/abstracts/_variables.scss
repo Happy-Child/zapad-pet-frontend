@@ -23,6 +23,14 @@ $color-red-dark: #B72018;
 $color-blue: #008CDD;
 $color-pink: #F7517F;
 $color-green-dark: #80A80A;
+$bg-site: #F7F8FA;
+
+// Z-indexes
+$z-nav-panel: 10;
+$z-popup: 50;
+
+// Min height
+$min-site-height: 480px;
 
 // Transitions
 $transition-default: 0.2s ease;

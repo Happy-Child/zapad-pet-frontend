@@ -3,8 +3,9 @@ import {GuestLayoutContainer} from "../../templates/guest";
 import {OAuthForm} from "../../organisms/OAuthForm";
 import {AInput} from "../../atoms/AInput";
 import {AButton} from "../../atoms/AButton";
+import React from "react";
 
-const NewPasswordContainer = () => {
+const NewPasswordContainer: React.FC = () => {
   return (
     <GuestLayoutContainer>
       <OAuthForm>

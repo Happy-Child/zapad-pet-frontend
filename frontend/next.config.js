@@ -5,4 +5,12 @@ module.exports = withSass({
   publicRuntimeConfig: {
     TEST,
   },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack']
+    });
+
+    return config;
+  }
 })

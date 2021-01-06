@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.scss"
 import Link from 'next/link'
 import { useRouter, NextRouter } from 'next/router'
-import { TALink } from "./types";
+import {TALink} from "./types";
 import cn from 'classnames';
 
 const ALink: React.FC<TALink> = ({ as, href = as, children, className = '' }: TALink) => {

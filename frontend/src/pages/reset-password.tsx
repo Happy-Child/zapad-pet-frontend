@@ -1,6 +1,8 @@
 import { ResetPasswordContainer } from "../ui/wrappers/reset-password";
+import React from "react";
+import {NextPage} from "next";
 
-const ResetPasswordPage = () => {
+const ResetPasswordPage: React.FC & NextPage = () => {
   return <ResetPasswordContainer />
 }
 

@@ -4,8 +4,9 @@ import {OAuthForm} from "../../organisms/OAuthForm";
 import {ALink} from "../../atoms/ALink";
 import {AInput} from "../../atoms/AInput";
 import {AButton} from "../../atoms/AButton";
+import React from "react";
 
-const ResetPasswordContainer = () => {
+const ResetPasswordContainer: React.FC = () => {
   const prevRouteAs = '/login';
   const prevRouteHref = 'login';
 
