@@ -3,7 +3,6 @@ import { MemberLayoutContainer } from "../../../templates/member";
 import React, { memo } from "react";
 
 const HomeContainer: React.FC = () => {
-  console.log('asd');
   return (
     <MemberLayoutContainer>
       HomeContainer

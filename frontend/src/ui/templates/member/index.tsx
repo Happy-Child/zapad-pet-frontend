@@ -1,7 +1,7 @@
 import React, {memo} from "react";
 import "./style.scss"
 import { TLayoutMember } from "./types";
-import { ONavPanel } from "../../organisms/ONavPanel";
+import { ONavPanel } from "@/ui/organisms/ONavPanel";
 
 const MemberLayoutContainer: React.FC<TLayoutMember> = ({ children }: TLayoutMember) => {
   return (
