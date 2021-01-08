@@ -2,6 +2,7 @@
 
 .a-link {
   $block: &;
+  display: block;
   transition: all $transition-default;
   color: $default-color-text;
 

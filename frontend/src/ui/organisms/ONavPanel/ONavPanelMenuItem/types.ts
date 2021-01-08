@@ -1,7 +1,7 @@
+import { TONavPanelMenuDataItem } from "../ONavPanelMenu/types";
+
 type TONavPanelMenuItem = {
-  children: JSX.Element | JSX.Element[],
-  as: string,
-  href: string,
+  item: TONavPanelMenuDataItem,
 }
 
 export type { TONavPanelMenuItem }

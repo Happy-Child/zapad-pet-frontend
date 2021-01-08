@@ -9,13 +9,13 @@
   max-width: 340px;
   height: 100vh;
   max-height: 100vh;
-  min-height: $min-site-height;
+  overflow-y: auto;
   z-index: $z-nav-panel;
   background: #fff;
   box-shadow: 4px 0 16px rgba(178, 178, 178, 0.08), 1px 0 2px rgba(178, 178, 178, 0.05);
 
   &__inner {
-    padding: px-to-rem(46px, 16px) px-to-rem(20px, 16px);
+    padding: px-to-rem(46px, 16px) px-to-rem(30px, 16px) px-to-rem(46px, 16px) px-to-rem(70px, 16px);
   }
 
   &__wrap-logo {

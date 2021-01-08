@@ -8,7 +8,7 @@ import React from "react";
 
 const ResetPasswordContainer: React.FC = () => {
   const prevRouteAs = '/login';
-  const prevRouteHref = 'login';
+  const prevRouteHref = '/login';
 
   return (
     <GuestLayoutContainer>

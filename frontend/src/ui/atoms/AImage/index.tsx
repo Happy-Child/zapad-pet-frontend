@@ -3,11 +3,11 @@ import { TAImage } from "./types";
 import "./style.scss"
 import cn from 'classnames';
 
-function getX2Image(src: string): JSX.Element {
+function getX2Image(src: string): React.ReactNode {
   return <source srcSet={`${src} 2x`} />;
 }
 
-function setRatio({ width, height }: { width: number, height: number }) {
+function setRatio({ width, height }: { width: number, height: number }): { paddingTop: string } {
   const resultPercent = height * 100 / width;
   return { paddingTop: `${resultPercent}%` };
 }

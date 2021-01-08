@@ -15,7 +15,7 @@ const RegistrationContainer: React.FC = () => {
         </span>
         <span className="o-auth-form__sub-title">
           Уже есть аккаунт?
-          <ALink as="/login" href="login" className="a-link_main">Авторизироваться</ALink>
+          <ALink as="/login" href="/login" className="a-link_main">Авторизироваться</ALink>
         </span>
         <form className="o-auth-form__form">
           <AInput className="o-auth-form__field" placeholder="example@mail.com" />

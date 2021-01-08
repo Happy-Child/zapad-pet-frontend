@@ -1,7 +1,7 @@
-import { ReactText } from "react";
+import React from "react";
 
 type TAButton = {
-  children: JSX.Element | ReactText,
+  children: React.ReactNode,
   className?: string,
   theme?: string,
 };

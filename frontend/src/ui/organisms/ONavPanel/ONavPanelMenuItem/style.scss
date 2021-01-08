@@ -1,2 +1,83 @@
 @import "../../../../styles/abstracts/index";
 
+.o-nav-panel-menu-item {
+  $block: &;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > .o-nav-panel-menu {
+    margin-top: 22px;
+    padding-left: px-to-rem(22px, 16px);
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+
+    path {
+      fill: rgba($color-dark, 0.3);
+      transition: all $transition-default;
+      fill-opacity: 1;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-content: center;
+    padding-right: 10px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%) rotate(90deg);
+      width: 12px;
+      height: 12px;
+      background-image: url("/images/svg/icon-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display: none;
+    }
+
+    &_active {
+      > #{$block} {
+        &__icon {
+          path {
+            fill: $color-main;
+          }
+        }
+
+        &__text {
+          color: $color-main;
+        }
+      }
+    }
+  }
+
+  &__text {
+    transition: all $transition-default;
+  }
+
+  &_has-child {
+    > #{$block} {
+      &__link {
+        &:after {
+          display: block;
+        }
+      }
+
+      &__icon {
+        path {
+          fill: $color-main;
+        }
+      }
+    }
+  }
+}

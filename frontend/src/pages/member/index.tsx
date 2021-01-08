@@ -1,13 +1,13 @@
-import { HomeContainer } from "../../ui/wrappers/home";
+import { HomeContainer } from "../../ui/wrappers/member/home";
 import React from "react";
 import {NextPage} from "next";
 
-const IndexPage: React.FC & NextPage = () => {
+const HomePage: React.FC & NextPage = () => {
   return <HomeContainer />
 }
 
-IndexPage.getInitialProps = async () => {
+HomePage.getInitialProps = async () => {
   return {}
 };
 
-export default IndexPage
+export default HomePage

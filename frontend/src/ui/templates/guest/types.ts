@@ -1,5 +1,7 @@
+import React from "react";
+
 type TLayoutGuest = {
-  children: JSX.Element | JSX.Element[],
+  children: React.ReactNode,
 }
 
 export type { TLayoutGuest }

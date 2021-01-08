@@ -15,14 +15,14 @@ const LoginContainer: React.FC = () => {
         </span>
         <span className="o-auth-form__sub-title">
           Нет аккаунта?
-          <ALink as="/registration" href="registration" className="a-link_main">Зарегистрироваться</ALink>
+          <ALink as="/registration" href="/registration" className="a-link_main">Зарегистрироваться</ALink>
         </span>
         <form className="o-auth-form__form">
           <AInput className="o-auth-form__field" placeholder="example@mail.com" />
           <AInput className="o-auth-form__field" type="password" placeholder="Пароль" />
           <span className="o-auth-form__sub-title o-auth-form__sub-title_bottom">
             Не помните пароля?
-            <ALink as="/reset-password" href="reset-password">Восстановить пароль</ALink>
+            <ALink as="/reset-password" href="/reset-password">Восстановить пароль</ALink>
           </span>
           <AButton className="o-auth-form__button">Авторизироваться</AButton>
         </form>

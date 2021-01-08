@@ -1,3 +1,13 @@
 * {
   @include custom-scroll();
 }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+
+  > * {
+    width: 100%;
+  }
+}

@@ -1,10 +1,11 @@
-import { ReactText } from "react";
+import React from "react";
 
 type TALink = {
   as: string,
   href?: string,
-  children: JSX.Element | ReactText,
+  children: React.ReactNode,
   className?: string,
+  classNameIsActive?: string,
 };
 
 export type { TALink }

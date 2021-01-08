@@ -10,7 +10,9 @@ export default function MyApp({Component, pageProps}: AppProps): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Next.js TypeScript Quickstart</title>
       </Head>
-      <Component {...pageProps} />
+      <div className="page">
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import "./style.scss"
 import { TLayoutMember } from "./types";
 import { ONavPanel } from "../../organisms/ONavPanel";
@@ -14,5 +14,6 @@ const MemberLayoutContainer: React.FC<TLayoutMember> = ({ children }: TLayoutMem
   )
 }
 
+const MemberLayoutContainerMemo = memo<TLayoutMember>(MemberLayoutContainer);
 
-export { MemberLayoutContainer }
+export { MemberLayoutContainerMemo as MemberLayoutContainer }

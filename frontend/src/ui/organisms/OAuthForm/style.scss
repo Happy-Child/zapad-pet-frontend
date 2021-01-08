@@ -19,7 +19,8 @@
 
   &__sub-title {
     margin-bottom: px-to-rem(24px, 16px);
-    display: block;
+    display: flex;
+    align-items: center;
     color: $color-gray;
 
     a {

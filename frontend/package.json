@@ -11,7 +11,8 @@
     "h_push": "heroku container:push web --app zapad-pet-frontend",
     "h_release": "heroku container:release web --app zapad-pet-frontend",
     "h_build": "yarn remove_images && yarn build_image && yarn h_push && yarn h_release",
-    "h_logs": "heroku logs --tail --app zapad-pet-frontend"
+    "h_logs": "heroku logs --tail --app zapad-pet-frontend",
+    "lint": "eslint \"{src,apps}/**/*.{ts,tsx}\" --fix"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
@@ -29,7 +30,8 @@
     "next": "latest",
     "node-sass": "^5.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-slidedown": "^2.4.5"
   },
   "devDependencies": {
     "@types/node": "^14.14.16",

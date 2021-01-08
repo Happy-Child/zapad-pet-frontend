@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import "./style.scss"
 import { TLayoutGuest } from "./types";
 
@@ -13,5 +13,6 @@ const GuestLayoutContainer: React.FC<TLayoutGuest> = ({ children }: TLayoutGuest
   )
 }
 
+const GuestLayoutContainerMemo = memo<TLayoutGuest>(GuestLayoutContainer);
 
-export { GuestLayoutContainer }
+export { GuestLayoutContainerMemo as GuestLayoutContainer }
