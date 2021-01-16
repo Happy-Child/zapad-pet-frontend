@@ -67,7 +67,7 @@ const ONavPanel: React.FC = () => {
   return (
     <nav className="o-nav-panel">
       <div className="o-nav-panel__inner">
-        <ALink as="/" href="/" className="o-nav-panel__wrap-logo">
+        <ALink as="/member" href="/member" className="o-nav-panel__wrap-logo">
           <AImage src="/images/logo-main.svg" />
         </ALink>
         <ONavPanelMenu menu={menu} />

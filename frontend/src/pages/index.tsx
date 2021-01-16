@@ -10,7 +10,7 @@ IndexPage.getInitialProps = async ({ res }: NextPageContext) => {
     res.end();
   }
 
-  return;
+  return {};
 };
 
 export default IndexPage
