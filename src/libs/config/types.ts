@@ -1,5 +1,6 @@
 type TypeConfig = {
-  TEST: string,
+  API_URL: string;
+  SITE_URL: string;
 }
 
 export type { TypeConfig }

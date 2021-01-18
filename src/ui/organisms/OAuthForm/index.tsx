@@ -1,7 +1,7 @@
 import React from "react";
 import { TOAuthForm } from "./types";
 import "./style.scss"
-import { AImage } from "../../atoms/AImage";
+import { AImage } from "@/ui/atoms/AImage";
 
 const OAuthForm: React.FC<TOAuthForm> = ({ children }: TOAuthForm) => {
   return (

@@ -1,9 +1,10 @@
 const withSass = require('@zeit/next-sass')
-const { TEST } = require('config');
+const { API_URL, SITE_URL } = require('config');
 
 module.exports = withSass({
   publicRuntimeConfig: {
-    TEST,
+    API_URL,
+    SITE_URL,
   },
   webpack(config) {
     config.module.rules.push({

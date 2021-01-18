@@ -1,4 +1,4 @@
-import { LoginContainer } from "../ui/wrappers/login";
+import { LoginContainer } from "@/ui/wrappers/login";
 import React from "react";
 import {NextPage} from "next";
 

@@ -1,3 +1,4 @@
 declare module 'config' {
-  export const TEST: string;
+  export const API_URL: string;
+  export const SITE_URL: string;
 }

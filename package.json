@@ -2,18 +2,18 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3001",
     "build": "next build",
     "start": "next start -p $PORT",
     "type-check": "tsc",
-    "remove_images": "docker rmi -f zapad-pet-frontend registry.heroku.com/zapad-pet-frontend/web",
-    "build_image": "docker build . -t zapad-pet-frontend",
-    "h:push": "heroku container:login && heroku container:push web --app zapad-pet-frontend",
-    "h:release": "heroku container:release web --app zapad-pet-frontend",
-    "h:build": "yarn remove_images && yarn build_image && yarn h:push && yarn h:release",
-    "h:logs": "heroku logs --tail --app zapad-pet-frontend",
     "lint": "eslint \"{src,apps}/**/*.{ts,tsx}\"",
-    "lint:fix": "eslint \"{src,apps}/**/*.{ts,tsx}\" --fix"
+    "lint:fix": "eslint \"{src,apps}/**/*.{ts,tsx}\" --fix",
+    "h:release": "heroku container:release web --app zapad-pet-frontend",
+    "h:push": "heroku container:login && heroku container:push web --app zapad-pet-frontend",
+    "docker:build-image": "docker build . -t zapad-pet-frontend",
+    "docker:remove-image": "docker rmi -f zapad-pet-frontend registry.heroku.com/zapad-pet-frontend/web",
+    "h:build": "yarn docker:remove-image && yarn docker:build-image && yarn h:push && yarn h:release",
+    "h:logs": "heroku logs --tail --app zapad-pet-frontend"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",

@@ -1,9 +1,9 @@
 import "./style.scss"
 import { GuestLayoutContainer } from "../../templates/guest";
 import { OAuthForm } from "../../organisms/OAuthForm";
-import { ALink } from "../../atoms/ALink";
-import { AInput } from "../../atoms/AInput";
-import { AButton } from "../../atoms/AButton";
+import { ALink } from "@/ui/atoms/ALink";
+import { AInput } from "@/ui/atoms/AInput";
+import { AButton } from "@/ui/atoms/AButton";
 import React from "react";
 
 const LoginContainer: React.FC = () => {

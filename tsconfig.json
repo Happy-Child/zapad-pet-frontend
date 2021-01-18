@@ -20,7 +20,7 @@
     "baseUrl": "./src",
     "paths": {
       "@/styles/*": ["styles/*"],
-      "@/utils/*": ["utils/*"],
+      "@/libs/*": ["libs/*"],
       "@/ui/*": ["ui/*"],
     }
   },
